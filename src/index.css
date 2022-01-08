@@ -1,4 +1,76 @@
 .body {
-  background: black;
-  overflow-x: 0;
+  position: relative;
+  background: white;
+  overflow-x: none;
+
+
+
+  
+}
+.home-title {
+  position: relative;
+  top: 4em;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title-result {
+  position: relative;
+  top: 3em;
+}
+.sub-result {
+  position: relative;
+  top: 9em; 
+  font-size: 1rem;
+  text-align: center;
+} 
+.search-bar {
+  position: relative;
+  top: 27em;
+
+
+  width: 30%;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-answer {
+  position: relative;
+  top: 26.5em;
+  background-color: green;
+}
+.home-subTitle {
+  position: relative;
+  font-size: 1rem;
+  text-align: center;
+  top: 12em;
+}
+.Link {
+  color: black;
+  text-decoration: none;
+}
+.Link:hover {
+  color: black;
+  text-decoration: none;
+}
+.result-container {
+  position: relative;
+  top: 25em;
+  background-color: lightgrey;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  box-shadow: 3px 3px;
+
+  height: 200px;
+  width: 400px;
+}
+.result-wrapper {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

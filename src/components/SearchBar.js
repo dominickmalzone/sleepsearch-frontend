@@ -15,7 +15,7 @@ function SearchBar() {
           <Form.Group className="mb-3 search-bar" controlId="formBasicEmail">
             <Form.Control
               name="data"
-              placeholder="How do I know if I have a sleep disorder?"
+              placeholder="Try to ask something !"
               onChange={(e) => handleChange(e)}
             />
           </Form.Group>

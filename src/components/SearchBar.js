@@ -20,7 +20,7 @@ function SearchBar() {
             />
           </Form.Group>
           <Button className="Link btn-answer" variant="success" type="submit">
-            <Link to={`/results?q=${searchQuery}`} className="Link">
+            <Link to={`/search?q=${searchQuery}`} className="Link">
               Answer
             </Link>
           </Button>

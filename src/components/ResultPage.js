@@ -10,7 +10,7 @@ function ResultPage() {
   const runSearchQuery = (searchPhrase) => {
     console.log("runSearchQuery");
     try {
-      fetch(`${SERVER_URL}/search`)
+      fetch(`${SERVER_URL}/search?data=${searchPhrase}`)
         .then((response) => response.json())
         .then((data) => {
           console.log(`Results here ${data}`);
@@ -26,22 +26,13 @@ function ResultPage() {
     let searchTerm = searchParams.get("q");
     console.log("Calling search api with phrase: ", searchTerm);
     runSearchQuery(searchTerm);
+
+    setResult(
+      `Here is where the results will be for your search: ${searchTerm}`
+    );
   }, []);
 
-  const ResultsPage = () => {
-    // useEffect(() => {
-    //   axios
-    //     .get(`${SERVER_URL}/search`)
-    //     .then((res) => {
-    //       res.json();
-    //       console.log("res.json");
-    //     })
-    //     .then((result) => {
-    //       setResult(result);
-    //       console.log("results are back", result);
-    //     });
-    // });
-  };
+  const ResultsPage = () => {};
 
   return (
     <div className="body">

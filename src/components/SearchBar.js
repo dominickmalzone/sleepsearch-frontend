@@ -1,5 +1,4 @@
 import { Form, Button } from "react-bootstrap";
-import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 function SearchBar() {
@@ -32,47 +31,3 @@ function SearchBar() {
 }
 
 export default SearchBar;
-
-// COMMENTS
-
-// function handleFormSubmit(e) {
-//     e.preventDefault();
-//     console.log(this.state);
-//     axios({
-//         method:'post',
-//         url:"http://localhost:5000/search",
-//         headers: {'content-type': 'application/json'},
-//         data:this.state
-//     })
-//     .then(result => {
-//         this.setState({results:result.data});
-//         console.log(result.data);
-//     })
-//     .catch(error=> {
-//         console.log(error);
-//     })
-// }
-// }
-// const searchEngine = () => {
-// let userSearch = {
-//     data: search
-// }
-// if (search !== "") {
-//     axios
-//       .post("http://localhost:5000/search", userSearch)
-
-//       .then(function (response) {
-//         console.log(response);
-//         //Perform action based on response
-//       })
-//       .catch(function (error) {
-//         console.log(error);
-//         //Perform action based on error
-// })
-// } else {
-//     alert("The search query cannot be empty")
-// }}
-// const [search, setSearch] = useState("")
-// let state = {
-//     data: search
-// }

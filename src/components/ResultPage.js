@@ -1,12 +1,13 @@
 // import axios from "axios";
 import React, { useState, useEffect } from "react";
-
+import { useSearchParams } from "react-router-dom";
 function ResultPage() {
   const [result, setResult] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const SERVER_URL = "http://localhost:5000";
 
-  const runSearchQuery = () => {
+  const runSearchQuery = (searchPhrase) => {
     console.log("runSearchQuery");
     try {
       fetch(`${SERVER_URL}/search`)
@@ -21,7 +22,10 @@ function ResultPage() {
   };
 
   useEffect(() => {
-    console.log("UseEffect");
+    console.log("UseEffect from Results Page");
+    let searchTerm = searchParams.get("q");
+    console.log("Calling search api with phrase: ", searchTerm);
+    runSearchQuery(searchTerm);
   }, []);
 
   const ResultsPage = () => {

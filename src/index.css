@@ -2,10 +2,6 @@
   position: relative;
   background: white;
   overflow-x: none;
-
-
-
-  
 }
 .home-title {
   position: relative;
@@ -20,14 +16,13 @@
 }
 .sub-result {
   position: relative;
-  top: 9em; 
+  top: 9em;
   font-size: 1rem;
   text-align: center;
-} 
+}
 .search-bar {
   position: relative;
   top: 27em;
-
 
   width: 30%;
 }
@@ -68,8 +63,13 @@
   height: 200px;
   width: 400px;
 }
+
+.loading-container {
+  position: relative;
+  top: 25em;
+}
+
 .result-wrapper {
-  
   display: flex;
   align-items: center;
   justify-content: center;

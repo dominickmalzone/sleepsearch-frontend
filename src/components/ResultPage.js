@@ -11,13 +11,11 @@ function ResultPage() {
   const runSearchQuery = (searchPhrase) => {
     console.log("runSearchQuery");
     try {
-      //set loading
       fetch(`${SERVER_URL}/search?data=${searchPhrase}`)
         .then((response) => response.json())
         .then((data) => {
           let responseText = data.result;
           console.log("Response text > ", responseText);
-          // console.log(`Results here ${JSON.stringify(data)}`);
           setResult(responseText);
         });
     } catch (e) {
@@ -26,14 +24,10 @@ function ResultPage() {
   };
 
   useEffect(() => {
-    console.log("UseEffect from Results Page");
+    console.log("useEffect from Results Page");
     let searchTerm = searchParams.get("q");
     console.log("Calling search api with phrase: ", searchTerm);
     runSearchQuery(searchTerm);
-
-    // setResult(
-    //   `Here is where the results will be for your search: ${searchTerm}`
-    // );
   }, []);
 
   const ResultsPage = () => {};

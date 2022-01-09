@@ -6,7 +6,7 @@ function ResultPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   // const [loading, setLoading] = useState(false);
 
-  const SERVER_URL = "https://7bf9-125-164-13-145.ngrok.io"; //"http://localhost:5000";
+  const SERVER_URL = "https://sleep-search-api.herokuapp.com"; //"http://localhost:5000";
 
   const runSearchQuery = (searchPhrase) => {
     console.log("runSearchQuery");

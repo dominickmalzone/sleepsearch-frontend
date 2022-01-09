@@ -1,11 +1,21 @@
 import axios from "axios"
+import React, { useState, useEffect } from "react"
 
 function ResultPage() {
-    const resultPage = () => {
-        axios.get('http://localhost:5000/search').then(response => {
-            console.log("this is search: " + response)
+    const [result, setResult] = useState("")
+
+    const ResultsPage = () => {
+        useEffect(() => {
+        axios.get('http://localhost:5000/search').then(res => res.json()).then(
+            result => {
+                setResult(result)
+                console.log(result)
+            }
+        )
         })
     }
+
+
 
 
     return(

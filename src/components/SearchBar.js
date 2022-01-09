@@ -17,7 +17,7 @@ function SearchBar() {
                 <Form.Group className="mb-3 search-bar" controlId="formBasicEmail">
                         <Form.Control name="data" placeholder="How do I achieve this?"/>
                 </Form.Group>
-                <Button className="Link btn-answer" variant="success" type="submit">Answer</Button>
+                <Button className="Link btn-answer" variant="success" type="submit"><Link to="/results" className="Link">Answer</Link></Button>
             </Form>
             </div>
         </div>
